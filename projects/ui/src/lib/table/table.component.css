@@ -1,0 +1,10 @@
+table {
+  width: 80%;
+  margin: 1% !important;
+}
+ .mat-mdc-header-cell{
+  height: 80px;
+  color: beige;
+  background-color: black !important;
+}
+
