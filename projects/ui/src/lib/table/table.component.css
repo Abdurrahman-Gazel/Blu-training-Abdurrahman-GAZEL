@@ -7,4 +7,9 @@ table {
   color: beige;
   background-color: black !important;
 }
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 30%;
+  margin: 1% ;
 
+}

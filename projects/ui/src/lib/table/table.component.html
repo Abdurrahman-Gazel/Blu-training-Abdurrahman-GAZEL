@@ -1,9 +1,23 @@
+<mat-form-field>
+  <mat-label>Filter on First Name</mat-label>
+  <input matInput  (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Filter on Last Name</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Filter on Email</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+</mat-form-field>
+
+
+<!-- table.component.html -->
+
+
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
-  <!--- Note that these columns can be defined in any order.
-        The actual rendered columns are set as a property on the row definition" -->
-
-  <!-- Position Column -->
+  <!-- id Column -->
   <ng-container matColumnDef="id" >
     <th mat-header-cell *matHeaderCellDef> No. </th>
     <td mat-cell *matCellDef="let element"> {{element.id}} </td>
@@ -15,13 +29,13 @@
     <td mat-cell *matCellDef="let element"> {{element.name}} </td>
   </ng-container>
 
-  <!-- Weight Column -->
+  <!-- lastname Column -->
   <ng-container matColumnDef="lastname" >
     <th mat-header-cell *matHeaderCellDef > Last Name </th>
     <td mat-cell *matCellDef="let element"> {{element.lastname}} </td>
   </ng-container>
 
-  <!-- Symbol Column -->
+  <!-- email Column -->
   <ng-container matColumnDef="email" >
     <th mat-header-cell *matHeaderCellDef > Email </th>
     <td mat-cell *matCellDef="let element"> {{element.email}} </td>
